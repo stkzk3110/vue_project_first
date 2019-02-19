@@ -1,0 +1,16 @@
+@charset 'utf-8';
+@import '_reset.css';
+
+/** Variables */
+$c-text: hsl(50, 20%, 20%);
+
+/** Transition */
+.fade-enter-active {
+    transition: opacity ls ease-in
+}
+.fade-leave-active {
+    transition: opacity ls ease-out
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0
+}

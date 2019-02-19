@@ -1,0 +1,9 @@
+# リライトを許可する
+RewriteEngine on
+RewriteBase /
+
+#Vue SPA
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ./index.html [L]
